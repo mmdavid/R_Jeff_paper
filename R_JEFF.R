@@ -63,7 +63,11 @@ head(names_pb)
 names_pb$invert1<-names_pb$second_name
 names_pb$invert2<-names_pb$first_name_unlist
 
-#now merge with function
+#now merge 
+inverted_names<-paste (names_pb$invert1,names_pb$invert2, sep="  ")
+names_pb$inverted_names<-inverted_names
+
+#now: remove duplicates with same column names
 
 
 #thenI grep the legnth for each cycle: 
